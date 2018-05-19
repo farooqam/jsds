@@ -229,6 +229,7 @@ LinkedList.prototype = (function () {
             var nodeToDelete = nodeBefore.getNext();
             nodeBefore.setNext(nodeToDelete.getNext());
             this._decrementLength();
+            
             return nodeToDelete;
         }
     }
